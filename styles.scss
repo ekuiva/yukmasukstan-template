@@ -1,16 +1,15 @@
 
-$primary : #229bf6;
-
 // Semantic color scheme
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro'); 
 $theme-colors: (
-  primary: $primary,
+  primary: #229bf6,
   secondary: #004EA3,
   success: #28a745,
-  info: #00fbff,
+  info: #19a093,
   warning: #ffc107,
   danger: #dc3545,
   light: #f8f9fa,
-  dark: #343a40
+  dark: #343a40,
 );
 
 // Options
@@ -35,7 +34,10 @@ $body-color-inverse: invert($body-color) !default;
 $link-color: #007bff;
 
 
-$font-family-base: -apple-system, system-ui, BlinkMacSystemFont, "Source Sans Pro", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+
+
 $headings-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Source Sans Pro", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
@@ -100,4 +102,28 @@ body > * {
 	  color: #898989;
     line-height: 1.85em;
     font-size: 14px;
+}
+
+.color-purple {
+	background-color:#9d36b7;
+}
+
+.color-purple:hover {
+	background-color:#6A1B9A;
+}
+
+.text-purple {
+	color:#9d36b7;
+}
+
+.color-pink {
+	background-color:#E91E63;
+}
+
+.color-pink:hover {
+	background-color:#AD1457;
+}
+
+.text-pink {
+	color:#E91E63;
 }
