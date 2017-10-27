@@ -5602,3 +5602,13 @@ body > * {
 
 .text-pink {
   color: #E91E63; }
+
+.dropdown-menu {
+  border: 0;
+  border-radius: 0rem 0rem 0.25rem 0.25rem; }
+
+.dropdown-item {
+  padding: 0.60rem 1.5rem; }
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #e7f5ff; }
