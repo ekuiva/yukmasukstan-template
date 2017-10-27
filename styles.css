@@ -5578,3 +5578,8 @@ body > * {
     top: 0px;
     pointer-events: none;
     background: linear-gradient(to top, #343a40 0%, transparent 100%); }
+
+.text-section-light {
+  color: #898989;
+  line-height: 1.85em;
+  font-size: 14px; }
