@@ -5612,3 +5612,12 @@ body > * {
 
 .dropdown-item:focus, .dropdown-item:hover {
   background-color: #e7f5ff; }
+
+.text-gray-footer {
+  font-size: 14px;
+  color: gray; }
+
+.p-footer-gray {
+  font-size: 14px;
+  color: gray;
+  border-top: 1px solid #e2e2e2; }
