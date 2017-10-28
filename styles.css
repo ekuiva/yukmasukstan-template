@@ -5604,8 +5604,7 @@ body > * {
   color: #E91E63; }
 
 .dropdown-menu {
-  border: 0;
-  border-radius: 0rem 0rem 0.25rem 0.25rem; }
+  border: 0; }
 
 .dropdown-item {
   padding: 0.60rem 1.5rem; }
