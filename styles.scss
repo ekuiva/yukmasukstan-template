@@ -31,12 +31,10 @@ $enable-print-styles:       true !default;
 $body-bg: white;
 $body-color: #292b2c;
 $body-color-inverse: invert($body-color) !default;
-$link-color: #007bff;
+$link-color: #229bf6;
 
 
 $font-family-base: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-
-
 
 $headings-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Source Sans Pro", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 
@@ -168,4 +166,45 @@ body > * {
 
 .box-shadow-form {
 	box-shadow: 1px 2px 2px 2px #d8d7d7;
+}
+
+.background-white {
+	background-color: #fff;
+}
+
+.ul-list-sc {
+	overflow: auto;
+  padding-left: 0;
+}
+
+.ul-list-sc .li-list {
+	list-style-type: none;
+	float: left;
+}
+
+.ul-list-sc .li-list a i {
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
+}
+
+.fa-facebook {
+	background:#3b5998
+} 
+.fa-linkedin {
+	background:#007bb6
+}
+.fa-twitter {
+	background:#00aced
+}
+.fa-google-plus {
+	background:#dd4b35
+}
+.fa-instagram {
+	background:#d22550
 }

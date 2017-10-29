@@ -666,11 +666,11 @@ fieldset[disabled] a.btn {
 
 .btn-link {
   font-weight: normal;
-  color: #007bff;
+  color: #229bf6;
   background-color: transparent;
   border-radius: 0; }
   .btn-link:hover {
-    color: #0056b3;
+    color: #0873c4;
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent; }
@@ -2805,11 +2805,11 @@ button.list-group-item-dark {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: #229bf6;
   background-color: #fff;
   border: 1px solid #ddd; }
   .page-link:focus, .page-link:hover {
-    color: #0056b3;
+    color: #0873c4;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #ddd; }
@@ -3146,12 +3146,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
+  color: #229bf6;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #0056b3;
+    color: #0873c4;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -5635,3 +5635,39 @@ body > * {
 
 .box-shadow-form {
   box-shadow: 1px 2px 2px 2px #d8d7d7; }
+
+.background-white {
+  background-color: #fff; }
+
+.ul-list-sc {
+  overflow: auto;
+  padding-left: 0; }
+
+.ul-list-sc .li-list {
+  list-style-type: none;
+  float: left; }
+
+.ul-list-sc .li-list a i {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 10px;
+  padding-top: 15%; }
+
+.fa-facebook {
+  background: #3b5998; }
+
+.fa-linkedin {
+  background: #007bb6; }
+
+.fa-twitter {
+  background: #00aced; }
+
+.fa-google-plus {
+  background: #dd4b35; }
+
+.fa-instagram {
+  background: #d22550; }
