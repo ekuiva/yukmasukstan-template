@@ -5564,7 +5564,7 @@ body > * {
     left: 0px;
     top: 0px;
     pointer-events: none;
-    background: rgba(52, 58, 64, 0.25); }
+    background: rgba(52, 58, 64, 0.4); }
 
 .gradient-overlay {
   overflow: hidden;
