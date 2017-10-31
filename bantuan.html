@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:400,600,700" rel="stylesheet" lazyload="true">
   <link rel="stylesheet" href="styles.css" type="text/css">
-  <title>Checkout - Yuk Masuk STAN</title>
+  <title>Order Diterima- Yuk Masuk STAN</title>
   <meta name="description" content="Yukmasukstan adalah tempat kamu untuk mempersiapkan masuk STAN.">
   <meta name="keywords" content="kursus online">
   <link rel="icon" href="assets/images/favicon.png"> </head>
@@ -46,126 +46,6 @@
       </div>
     </div>
   </nav>
-  <div class="py-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="breadcrumb my-2 bg-light" style="margin-bottom: 0px; margin-top: 0px;">
-            <li class="breadcrumb-item">
-              <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
-            </li>
-            <li class="breadcrumb-item active">Checkout</li>
-          </ul>
-        </div>
-      </div>
-      <div id="accordion" role="tablist">
-        <div class="card my-3">
-          <div class="card-header" role="tab" id="headingOne">
-            <h6 class="mb-0">
-              <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> Pelanggan Klik disini untuk login </a>
-            </h6>
-          </div>
-          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-            <p class="mx-3 my-0">Jika Anda telah berbelanja dengan kami sebelumnya, masukkan rincian Anda di kotak di bawah ini. Jika Anda adalah pelanggan baru, lanjutkan ke bagian Penagihan &amp; Pengiriman.</p>
-            <form class="mx-3 py-3" method="post" action="https://formspree.io/">
-              <div class="form-group w-50"> <label>Email address*</label>
-                <input type="email" name="email" class="form-control" placeholder="Enter email" required=""> </div>
-              <div class="form-group w-50"> <label>Password*</label>
-                <input type="password" name="password" class="form-control" placeholder="Password" required=""> </div>
-              <button type="submit" class="btn btn-primary">Login</button>
-            </form>
-            <p class="mx-3 ">
-              <a href="#">Lupa Password ?</a>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingTwo">
-            <h6 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Punya kupon? Klik di sini untuk memasukkan kode Anda </a>
-            </h6>
-          </div>
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-            <form class="form-inline mx-3 py-3" method="post" action="https://formspree.io/">
-              <input type="email" name="email" class="form-control" placeholder="Kode Kupon">
-              <button type="submit" class="btn btn-primary mx-2">Kirim Kupon</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <form class="" method="post" action="order-received.html">
-            <div class="row">
-              <div class="col-md-6">
-                <p class="lead my-3">Billing Details</p>
-                <div class="form-row">
-                  <div class="form-group col-md-6"> <label>Nama Depan*</label>
-                    <input type="text" name="nama" class="form-control" placeholder="Nama Depan" required="true"> </div>
-                  <div class="form-group col-md-6"> <label>Nama Belakang*</label>
-                    <input type="text" name="nama" class="form-control" placeholder="Nama Belakang" required="true"> </div>
-                </div>
-                <div class="form-group"> <label>Alamat*</label>
-                  <input type="text" name="billing_address_1" class="form-control" placeholder="No. Rumah dan nama jalan" required="true"> </div>
-                <div class="form-group">
-                  <input type="text" name="billing_address_2" class="form-control" placeholder="Apartment, suite, unit (opsional)"> </div>
-                <div class="form-group"> <label>Kota / Kabupaten*</label>
-                  <input type="text" name="kota_kabupaten" class="form-control" placeholder="Kota atau Kabupaten" required="true"> </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6"> <label>Provinsi*</label>
-                    <input type="text" name="provinsi" class="form-control" placeholder="Provinsi" required="true"> </div>
-                  <div class="form-group col-md-6"> <label>Kode Pos*</label>
-                    <input type="text" name="kodepos" class="form-control" placeholder="Kode Pos" required="true"> </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6"> <label>No. Telpon*</label>
-                    <input type="text" name="no-telpon" class="form-control" placeholder="No. Telpon" required="true"> </div>
-                  <div class="form-group col-md-6"> <label>Email*</label>
-                    <input type="email" name="email" class="form-control" placeholder="Email" required="true"> </div>
-                </div>
-                <div class="form-group"> <label class="checkbox-inline"><input type="checkbox" value="" class="mx-1">Buat sebuah akun?</label> </div>
-                <p class="lead my-3">Tambahan Informasi</p>
-                <div class="form-group"> <label for="exampleFormControlTextarea1">Order notes</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Catatan tentang pesanan Anda, mis. catatan khusus untuk pengiriman"></textarea> </div>
-              </div>
-              <div class="col-md-6 bg-light">
-                <p class="lead my-3">Order Details</p>
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td><b>Produk</b></td>
-                      <td><b>Total</b></td>
-                    </tr>
-                    <tr>
-                      <td>Panduan Wajib USM PKN STAN</td>
-                      <td>Rp. 120.000</td>
-                    </tr>
-                    <tr>
-                      <td><b>Sub Total</b></td>
-                      <td>Rp. 120.000</td>
-                    </tr>
-                    <tr>
-                      <td><b>Total</b></td>
-                      <td><b>Rp. 120.000</b></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="form-check"> <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
-                Transfer Bank</label>
-                  <p class=""> Silakan kirim cek ke Nama Toko, Toko Street, Store Town, Store State / County, Simpan Kode Pos.</p>
-                  <button type="submit" class="btn btn-primary btn-lg btn-block">Place Order</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="py-5">
     <div class="container">
       <div class="row">
