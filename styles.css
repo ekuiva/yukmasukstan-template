@@ -5671,3 +5671,10 @@ body > * {
 
 .fa-instagram {
   background: #d22550; }
+
+.harga {
+  background-color: #ff5722;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  padding: 5px; }
