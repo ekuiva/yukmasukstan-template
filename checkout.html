@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:400,600,700" rel="stylesheet" lazyload="true">
   <link rel="stylesheet" href="styles.css" type="text/css">
-  <title>Keranjang Belanja - Yuk Masuk STAN</title>
+  <title>Checkout - Yuk Masuk STAN</title>
   <meta name="description" content="Yukmasukstan adalah tempat kamu untuk mempersiapkan masuk STAN.">
   <meta name="keywords" content="kursus online">
   <link rel="icon" href="assets/images/favicon.png"> </head>
@@ -54,72 +54,43 @@
             <li class="breadcrumb-item">
               <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
             </li>
-            <li class="breadcrumb-item active">Keranjang Belanja</li>
+            <li class="breadcrumb-item active">Checkout</li>
           </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <table class="table table-cart">
-            <thead>
-              <tr>
-                <th class="table-active"></th>
-                <th class="table-active">Produk</th>
-                <th class="table-active">Harga</th>
-                <th class="table-active">Jml</th>
-                <th class="table-active">Total</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><i class="fa fa-times-circle text-danger" aria-hidden="true"></i></td>
-                <td>Panduan Wajib USM PKN STAN</td>
-                <td>Rp. 120.000</td>
-                <td>1</td>
-                <td>Rp. 120.000</td>
-              </tr>
-            </tbody>
-          </table>
+      <div id="accordion" role="tablist">
+        <div class="card my-3">
+          <div class="card-header" role="tab" id="headingOne">
+            <h6 class="mb-0">
+              <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> Pelanggan Klik disini untuk login </a>
+            </h6>
+          </div>
+          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <p class="mx-3 my-0">Jika Anda telah berbelanja dengan kami sebelumnya, masukkan rincian Anda di kotak di bawah ini. Jika Anda adalah pelanggan baru, lanjutkan ke bagian Penagihan &amp; Pengiriman.</p>
+            <form class="mx-3 py-3" method="post" action="https://formspree.io/">
+              <div class="form-group w-50"> <label>Email address*</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter email" required=""> </div>
+              <div class="form-group w-50"> <label>Password*</label>
+                <input type="password" name="password" class="form-control" placeholder="Password" required=""> </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="mx-3 ">
+              <a href="#">Lupa Password ?</a>
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10">
-          <form class="form-inline" method="post" action="https://formspree.io/">
-            <input type="text" name="kupon" class="form-control m-1 w-25" placeholder="Kode Kupon">
-            <button type="submit" class="btn btn-outline-primary m-1">Kupon</button>
-          </form>
-        </div>
-        <div class="col-md-2">
-          <a class="btn btn-primary m-1 w-100 disabled" href="" disabled="">Update</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 col-centered rounded p-4 p-footer-gray bg-light">
-          <h5 class="text-dark">Total Belanja</h5>
-          <table class="table">
-            <thead>
-              <tr></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><b class="">Sub Total</b></td>
-                <td class="text-dark">Rp. 120.000</td>
-              </tr>
-              <tr>
-                <td class=""><b>Total</b></td>
-                <td class="text-dark">Rp. 120.000</td>
-              </tr>
-            </tbody>
-          </table>
-          <a class="btn m-1 w-100 btn-success" href="checkout.html"><i class="fa fa-fw fa-shopping-cart"></i>Proses</a>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h6 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Punya kupon? Klik di sini untuk memasukkan kode Anda </a>
+            </h6>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <form class="form-inline mx-3 py-3" method="post" action="https://formspree.io/">
+              <input type="email" name="email" class="form-control" placeholder="Kode Kupon">
+              <button type="submit" class="btn btn-primary mx-2">Kirim Kupon</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
