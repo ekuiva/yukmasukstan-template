@@ -5678,3 +5678,13 @@ body > * {
   font-weight: 600;
   border-radius: 0.25rem;
   padding: 5px; }
+
+.cupon {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+  display: inline-block;
+  float: left; }
+
+.table-cart th, .table-cart td {
+  padding: 0.25rem; }
