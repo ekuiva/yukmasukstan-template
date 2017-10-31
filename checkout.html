@@ -95,6 +95,74 @@
       </div>
     </div>
   </div>
+  <div class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="" method="post" action="https://formspree.io/">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="lead my-3">Billing Details</p>
+                <div class="form-row">
+                  <div class="form-group col-md-6"> <label>Nama Depan*</label>
+                    <input type="text" name="nama" class="form-control" placeholder="Nama Depan" required="true"> </div>
+                  <div class="form-group col-md-6"> <label>Nama Belakang*</label>
+                    <input type="text" name="nama" class="form-control" placeholder="Nama Belakang" required="true"> </div>
+                </div>
+                <div class="form-group"> <label>Alamat*</label>
+                  <input type="text" name="billing_address_1" class="form-control" placeholder="No. Rumah dan nama jalan" required="true"> </div>
+                <div class="form-group">
+                  <input type="text" name="billing_address_2" class="form-control" placeholder="Apartment, suite, unit (opsional)"> </div>
+                <div class="form-group"> <label>Kota / Kabupaten*</label>
+                  <input type="text" name="kota_kabupaten" class="form-control" placeholder="Kota atau Kabupaten" required="true"> </div>
+                <div class="form-group"> <label>Provinsi*</label>
+                  <input type="text" name="provinsi" class="form-control" placeholder="Provinsi" required="true"> </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6"> <label>No. Telpon*</label>
+                    <input type="text" name="no-telpon" class="form-control" placeholder="No. Telpon" required="true"> </div>
+                  <div class="form-group col-md-6"> <label>Email*</label>
+                    <input type="email" name="email" class="form-control" placeholder="Email" required="true"> </div>
+                </div>
+                <div class="form-group"> <label class="checkbox-inline"><input type="checkbox" value="" class="mx-1">Buat sebuah akun?</label> </div>
+                <p class="lead my-3">Tambahan Informasi</p>
+                <div class="form-group"> <label for="exampleFormControlTextarea1">Order notes</label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Catatan tentang pesanan Anda, mis. catatan khusus untuk pengiriman"></textarea> </div>
+              </div>
+              <div class="col-md-6 bg-light">
+                <p class="lead my-3">Order Details</p>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td><b>Produk</b></td>
+                      <td><b>Total</b></td>
+                    </tr>
+                    <tr>
+                      <td>Panduan Wajib USM PKN STAN</td>
+                      <td>Rp. 120.000</td>
+                    </tr>
+                    <tr>
+                      <td><b>Sub Total</b></td>
+                      <td>Rp. 120.000</td>
+                    </tr>
+                    <tr>
+                      <td><b>Total</b></td>
+                      <td><b>Rp. 120.000</b></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="form-check"> <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+                Check payments
+                </label>
+                  <p class=""> Silakan kirim cek ke Nama Toko, Toko Street, Store Town, Store State / County, Simpan Kode Pos.</p>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block">Place Order</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="py-5">
     <div class="container">
       <div class="row">
@@ -203,10 +271,8 @@
           <p class="text-gray-footer">Dapatkan update informasi mengenai berbagai berita, fitur &amp; artikel kami.</p>
         </div>
         <div class="col-md-4">
-          <form class="form-inline" method="post" action="https://formspree.io/">
-            <input type="email" name="email" class="form-control m-1" placeholder="Masukan email">
-            <button type="submit" class="btn btn-primary m-1">Ikuti Kami</button>
-          </form>
+          <input type="email" name="email" class="form-control m-1" placeholder="Masukan email">
+          <button type="submit" class="btn btn-primary m-1">Ikuti Kami</button>
         </div>
       </div>
       <div class="row">
