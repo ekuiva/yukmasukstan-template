@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="../dashboard.css" type="text/css">
+  <title>Materi TPA - Yukmasukstan</title>
+  <link rel="icon" href="../../assets/images/favicon.png"> </head>
+
+<body class="fixed-nav sticky-footer bg-light" id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-primary fixed-top bg-primary" id="mainNav">
+    <a class="navbar-brand text-white" href="index.html">Yukmasukstan</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Dashboard">
+          <a class="nav-link" href="../index.html"> <i class="fa fa-fw fa-dashboard"></i> <span class="nav-link-text">Dashboard</span> </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMateriPages" data-parent="#exampleAccordion"> <i class="fa fa-fw fa-book"></i> <span class="nav-link-text">Materi</span> </a>
+          <ul class="sidenav-second-level collapse" id="collapseMateriPages">
+            <li>
+              <a href="../materi/tpa.html">Materi TPA</a>
+            </li>
+            <li>
+              <a href="../materi/tbi.html">Materi TBI</a>
+            </li>
+            <li>
+              <a href="../materi/tkk.html">Materi TKK</a>
+            </li>
+            <li>
+              <a href="../materi/twk.html">Materi TWK</a>
+            </li>
+            <li>
+              <a href="../materi/tkp.html">Materi TKP</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Koleksi Video">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseKoleksiVideoPages" data-parent="#exampleAccordion"> <i class="fa fa-fw fa-video-camera"></i> <span class="nav-link-text">Koleksi Video</span> </a>
+          <ul class="sidenav-second-level collapse" id="collapseKoleksiVideoPages">
+            <li>
+              <a href="../koleksi-video/video-materi.html">Video Materi</a>
+            </li>
+            <li>
+              <a href="../koleksi-video/video-soal.html">Video Soal</a>
+            </li>
+            <li>
+              <a href="../koleksi-video/video-suplement.html">Video Suplement</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Charts">
+          <a class="nav-link" href="../pages/free-ebook.html"> <i class="fa fa-fw fa-get-pocket"></i> <span class="nav-link-text">Free Ebook</span> </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tables">
+          <a class="nav-link" href="../pages/quiz.html"> <i class="fa fa-fw fa-table"></i> <span class="nav-link-text">Quiz</span> </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Link">
+          <a class="nav-link" href="../pages/online-sharing.html"> <i class="fa fa-fw fa-commenting"></i> <span class="nav-link-text">Online Sharing</span> </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Exrtras">
+          <a class="nav-link" href="../pages/extras.html"> <i class="fa fa-fw fa-cube"></i> <span class="nav-link-text">Extras</span> </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tryout">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseTryoutPages" data-parent="#exampleAccordion"> <i class="fa fa-fw fa-paper-plane"></i> <span class="nav-link-text">Tryout</span> </a>
+          <ul class="sidenav-second-level collapse" id="collapseTryoutPages">
+            <li>
+              <a href="../tryout/tpa-tbi.html">TPA TBI</a>
+            </li>
+            <li>
+              <a href="../tryout/skd.html">SKD</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Yuk Belanja">
+          <a class="nav-link" href="../pages/yukbelanja.html"> <i class="fa fa-fw fa-shopping-cart"></i> <span class="nav-link-text">Yuk Belanja</span> </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler"> <i class="fa fa-fw fa-angle-left"></i> </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown"> </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <i class="fa fa-fw fa-envelope"></i> <span class="d-lg-none">Messages
+                  <span class="badge badge-pill badge-primary">12 New</span> </span> <span class="indicator d-none d-lg-block text-success">
+                  <i class="fa fa-fw fa-circle"></i>
+                  </span> </a>
+          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">New Messages:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <strong>David Miller</strong> <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <strong>Jane Smith</strong> <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <strong>John Doe</strong> <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all messages</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-fw fa-bell"></i> <span class="d-lg-none">Alerts
+                  <span class="badge badge-pill badge-warning">6 New</span> </span> <span class="indicator text-warning d-none d-lg-block">
+                  <i class="fa fa-fw fa-circle"></i>
+                  </span> </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">New Alerts:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <span class="text-success">
+                        <strong>
+                        <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                        </span> <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <span class="text-danger">
+                        <strong>
+                        <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+                        </span> <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> <span class="text-success">
+                        <strong>
+                        <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                        </span> <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all alerts</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-fw fa-user-circle-o"></i>Hallo, Nugraha</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Materi</a>
+        </li>
+        <li class="breadcrumb-item active">TPA</li>
+      </ol>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="nav flex-column nav-pills bg-light rounded" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active text-center" id="v-pills-bab-1-tab" data-toggle="pill" href="#v-pills-bab-1" role="tab" aria-controls="v-pills-bab-1" aria-selected="true">BAB 1
+              <br> </a>
+            <a class="nav-link text-center" id="v-pills-bab-2-tab" data-toggle="pill" href="#v-pills-bab-2" role="tab" aria-controls="v-pills-bab-2" aria-selected="false">BAB 2
+              <br> </a>
+            <a class="nav-link text-center" id="v-pills-bab-3-tab" data-toggle="pill" href="#v-pills-bab-3" role="tab" aria-controls="v-pills-bab-3" aria-selected="false">BAB 3
+              <br> </a>
+            <a class="nav-link text-center" id="v-pills-bab-4-tab" data-toggle="pill" href="#v-pills-bab-4" role="tab" aria-controls="v-pills-bab-4" aria-selected="false">BAB 4
+              <br> </a>
+            <a class="nav-link text-center" id="v-pills-bab-5-tab" data-toggle="pill" href="#v-pills-bab-5" role="tab" aria-controls="v-pills-bab-5" aria-selected="false">BAB 5
+              <br> </a>
+            <a class="nav-link text-center" id="v-pills-quiz-tab" data-toggle="pill" href="#v-pills-quiz" role="tab" aria-controls="v-pills-quiz" aria-selected="false">Quiz
+              <br> </a>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade active show" id="v-pills-bab-1" role="tabpanel" aria-labelledby="v-pills-bab-1-tab">
+              <p><b>Pendahuluan TPA</b></p>
+              <p>Setiap tahun, jumlah pendaftar PKN STAN selalu menjadi salah satu yang terbanyak di antara perguruan tinggi kedinasan atau bahkan perguruan tinggi umum. Berdasarkan data panselnas tahun 2017 ini, jumlah pendaftar ke PKN STAN sejumlah 166.315
+                siswa dengan kuota 6.961 kursi. Artinya, cuma 4% pendaftar yang akan lolos! Dengan peminat dan persaingan sebanyak itu, lo dituntut meraih nilai setinggi-tingginya biar lolos. Nah, dalam artikel ini gue akan mencoba mengupas tipe-tipe
+                soal dalam USM STAN agar mendapatkan nilai yang maksimal. Sebagai alumni STAN, juga akan berbagi pengalaman sekaligus tips lolos USM STAN, khususnya ujian tahap I nya. Selain itu, di artikel ini juga berikan link-link video dan artikel
+                TPA dan TBI untuk bahan belajar. Jadi saranin lo bookmark artikel ini buat panduan belajar menuju USM STAN 23 April nanti. </p>
+              <p><b>Test Potensi Akademik</b></p>
+              <p>Tes Potensi Akademik atau TPA merupakan tes psikologi yang dapat mengungkap apa yang telah dicapai seseorang secara intelektual. Karena mengungkap kualitas intelektual, maka tinggi/rendah-nya nilai TPA sering dihubungkan dengan tinggi/rendah-nya
+                tingkat kecerdasan. TPA sesungguhnya merupakan versi Indonesia dari tes GRE atau Graduate Record Examination. Model, materi, dan bidang yang diuji dalam TPA sebagian besar merujuk kepada GRE. </p>
+              <p>TPA merupakan tes psikologi yang digunakan untuk mengukur kegesitan mental seseorang ketika berurusan dengan obyek kata (verbal), angka (numeris) dan gambar (figural). Secara psikologi dipercaya bahwa terdapat batas minimal tingkat kegesitan
+                mental yang harus dimiliki seseorang sehingga ia berpeluang-besar berhasil menangani masalah yang bersifat intelektual. Karena itulah, TPA kerap dipergunakan dalam penyeleksian mahasiswa baru dan penyeleksian karyawan atau pegawai baru,
+                bahkan untuk penyeleksian pimpinan suatu institusi negeri/swasta. TPA digunakan dalam SMNPTN untuk S1 sejak tahun 2009 dan digunakan dalam SNMPTN tertulis untuk S1 sejak tahun 2012. Selain digunakan dalam penyaringan mahasiswa, TPA juga
+                digunakan dalam penyeleksian Calon Pegawai Negeri Sipil (CPNS). Di kalangan peserta tes CPNS, TPA kerap disebut psikotest.</p>
+              <p><b>Penyelenggara tes TPA adalah:</b></p>
+              <ol type="1">
+                <li>Program Pascasarjana Universitas tertentu secara independen</li>
+                <li>Unit Pelayanan Penyelenggaraan Tes Potensi Akademik (UPP-TPA) Bappenas bekerjasama dengan Program Pascasarjana Universitas tertentu (sebagai penanda kerjasama penyelenggaraan tes TPA ini, maka TPA-nya sering disebut sebagai TPA OTO Bappenas)</li>
+                <li>Himpunan Psikologi Indonesia (HIMPSI) dalam koordinasi Pusat Layanan Test Indonesia (TPA-nya dikenal sebagai TKDA, yakni singkatan dari Test Kemampuan Dasar Akademik).</li>
+              </ol>
+              <p><b>Biaya TPA</b></p>
+              <p>Biaya TPA OTO Bappenas berkisar antara Rp. 250.000 hingga Rp.1.200.000 tergantung lokasi.</p>
+              <p>Biaya TKDA HIMPSI: Rp 250.000 (tahun 2014).</p>
+              <p><b>Soal TPA</b></p>
+              <p>Tes verbal berfungsi untuk mengukur kegesitan mental seseorang di bidang kata dan bahasa. Tes ini meliputi tes sinonim (persamaan kata), tes antonim (lawan kata, tes padanan hubungan kata, tes pengelompokan kata, tes logika umum, tes analisa
+                pernyataan dan kesimpulan (silogisme), serta tes logika cerita. Tes angka berfungsi mengukur kegesitan mental seseorang di bidang angka, dalam rangka berpikir terstruktur dan logis matematis. Tes ini meliputi tes aritmetik (hitungan),
+                tes seri angka, tes seri huruf, tes logika angka dan tes angka dalam cerita. Tes figural berfungsi mengukur kegesitan mental seseorang berurusan dengan gambar, simbol dan diagram. Tes ini meliputi tes logika diagram. Soal TPA OTO Bappenas
+                terdiri atas 250 soal dengan waktu pengerjaan 3 jam. Soal dibagi dalam 3 subtes, yaitu tes kemampuan verbal, tes numerik, dan tes penalaran.[1] Soal TPA HIMPSI terdiri atas 130 soal dengan waktu pengerjaan 90 menit. Soal terbagi atas 3
+                subtes, yaitu tes kemampuan verbal, tes kemampuan numerik dan tes kemampuan figural. </p>
+              <p><b>Skor TPA</b></p>
+              <p>Rentang nilai TPA adalah dari 200 hingga 800. Nilai TPA rerata nasional adalah 500 dan nilai TPA rerata penerima beasiswa Proyek DUE (1997, 1998 dan 1999) adalah 550. Rentang nilai TPA minimum untuk lolos saringan seleksi S2 adalah 450-500
+                dan untuk lolos saringan seleksi S3 adalah 550-600.[1] Bagi dosen baru, untuk memperoleh NIDN (Nomor Induk Dosen Nasional), TPA terendah adalah 530. </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-bab-2" role="tabpanel" aria-labelledby="v-pills-bab-2-tab">
+              <p><b>Sekilas tentang Tes Tertulis USM STAN</b></p>
+              <p>Di saat sekarang, gue saranin lo buat fokus 100% untuk tes tertulis atau Tahap I USM dan mengabaikan dulu tahap II ataupun III. Kenapa sebaiknya fokus pada tes tertulis? Karena pertama sebagian besar pendaftar gugur di tes tertulis ini,
+                dan kedua belum tentu lo lolos tahap II atau III, jadi ngapain dipikirin?</p>
+              <p>Dari data di atas, terlihat kalau lebih dari 90% dari total pendaftar gagal di Tahap I. Di sisi lain, Tahap II kan ga perlu belajar, cuma perlu latihan fisik aja. Jadi setelah dinyatakan lolos tahap I, saran gue sih lo langsung aja fokus
+                belajar persiapan TKD (Tahap III). Ada waktu sekitar 1 bulan sejak pengumuman tahap I dan TKD. Harusnya sih lebih dari cukup buat mempelajari materinya.</p>
+              <p>Materi Tes Tertulis USM PKN STAN terdiri dari TPA dan TBI. Secara umum sih soal TPA ga terlalu sulit, namun tantangannya di sini adalah waktu pengerjaan yang sangat singkat. Jumlah soal TPA 120 soal dan lo cuma dikasih waktu 100 menit. Kalo
+                dirata-rata, jatah per soal kurang 50 detik. Gile ga tuh?</p>
+              <p>Lalu, soal TBI tingkat kesulitannya di atas materi Bahasa Inggris SMA. TBI ini akan menguji bener kemampuan grammar dan pengetahuan vocab lo. Dari pengalaman gue ngadain try out sih, kebanyakan anak yang mendapat nilai mati karena nilainya
+                kurang di TBI ini.</p>
+              <p>TPA dan TBI ini nanti dikerjakan terpisah dengan jeda waktu pengerjaan sekitar 15-30 menit. Sebagai gambaran, berikut ini pembagian materi TPA dan TBI USM PKN STAN:</p>
+              <p><b>A. Tes Potensi Akademik (TPA): jumlah 120 soal, waktu pengerjaan 100 menit</b></p>
+              <ol type="1">
+                <li>Kemampuan Verbal</li>
+                <ul>
+                  <li>Sinonim</li>
+                  <li>Antonim</li>
+                  <li>Kosa kata</li>
+                  <li>Analogi</li>
+                  <li>Bacaan</li>
+                </ul>
+                <li>Kemampuan Kuantitatif / Aritmetika dan Kemampuan Logika</li>
+                <ul>
+                  <li>Aritmatika</li>
+                  <li>Penarikan kesimpulan / logika</li>
+                  <li>Pola barisan</li>
+                </ul>
+                <li>Milk</li>
+              </ol>
+              <p><b>B. Tes Bahasa Inggris (TBI): jumlah soal 60, waktu pengerjaan 50 menit</b></p>
+              <ol type="1">
+                <li>Stucture and written expression</li>
+                <li>Error Recognition</li>
+                <li>Reading Comprehension</li>
+              </ol>
+              <p>Nah, dari 2 ujian tersebut, ada syarat 1/3 total nilai minimal yang harus benar. Jadi untuk soal TPA, minimal benar 40 soal, sedangkan TBI minimal benar 20 soal. Hal tersebut berlaku mutlak untuk keduanya. Jadi meski TPAnya misal bener semua
+                tapi TBI cuma bener 19, maka lo pasti ga lolos. Jadi target pertama adalah menghindari nilai mati.</p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-bab-3" role="tabpanel" aria-labelledby="v-pills-bab-3-tab">
+              <p><b>Panduan Belajar TPA USM STAN</b></p>
+              <p><b>a. Sinonim, Antomin dan Kosa kata</b></p>
+              <p>Dalam mengerjakan sinonim, antonim, dan kosa kata, it's OK kalo lo banyak yang kesulitan dengan kosa-kata yang muncul karena memang tingkat kesulitan kosa-katanya tinggi. Tapi jangan sampe panik dan mati-matian menghafal kamus. Nah tapi
+                gimana donk kalo banyak kosa kata yang ga ngerti?</p>
+              <p>Tips klisenya sih ya banyak-banyak baca dari sumber bacaan yang menggunakan Bahasa Indonesia dengan baik, misalnya koran Kompas. Dengan banyak membaca, lo akan ketemu banyak kosa-kata baru. Trus kalo ketemu kosa-kata baru, jangan didiemin
+                aja, tapi coba buka KBBI."Ya tapi kan tesnya udah mepet, gimana donks?"</p>
+              <p>Berikut ini beberapa tips dari gue untuk mengerjakan soal sinonim, antonim, dan kosa kata:</p>
+              <p><b>1) Biasakan memahami makna suku kata</b></p>
+              <p>Biasanya sebuah kata terdiri dari gabungan beberapa kata atau imbuan. Misalnya nih “nasionalisme”, terdiri dari kata “nasional” dan “isme”. Kalo lo tau salah satu dari kata atau imbuhan tersebut, itu akan membantu lo menebak arti katanya.
+                Misalnya lagi "tele-phone", tele artinya jarak jauh, phone artinya suara. Trus bisa juga, tele-portasi, tele-gram, tele-pati. Dari sebuah kata "tele" aja bisa membentuk beberapa kata baru.</p>
+              <p>Kata tersebut terdengar asing banget nih dan jarang banget digunakan dalam kehidupan sehari-hari. Tapi kalo lo jeli, ada kata yang sering banget dipake banget yaitu “didak” yang sering digabung menjadi “otodidak”. Nah kalau “otodidak” lo
+                pasti tau artinya kira-kira belajar sendiri, dalam hal ini “oto” artinya sendiri. Dari sini aja lo udah bisa menebak kalau jawabannya antara A dan D.</p>
+              <p><b>2) Gabungkan kata agar lo dapet konteksnya</b></p>
+              <p>Kalo tips pertama, kita memecah katanya, kalo ini digabung dengan kata lain biar kita ngerti konteksnya. Lo pasti sering denger sebuah frase, entah dimana, tapi lo ga tahu benar-benar arti kata-katanya.</p>
+              <p>Frase yang sering banget melekat pada dengan “tandon” adalah “tandon air”. Tinggal dimasukkan pilihan jawaban di atas dengan menjadi .... air. Nah yang paling sesuai dengan pengertian “tandon air” yang selama ini kita pahami adalah barang
+                tanggungan air / barang untuk menanggung air (E).</p>
+              <p><b>3) Arti Bahasa Asalnya</b></p>
+              <p>Beberapa kata dalam Bahasa Indonesia diserap dari bahasa asing. Kadang kita lebih tau arti kata dalam Bahasa asingnya ketimbang arti kata setelah diserap menjadi bahasa Indonesia, terutama kata yang berasal dari bahasa inggris.</p>
+              <p>Well, kalo dilihat sekilas, kata “adisi” terlihat sangat jarang dan asing digunakan dalam Bahasa sehari-hari. Coba kira-kira, berasal dari kata apa sih “adisi” itu? Kalau lo jeli, “adisi” berasal dari kata “addition” atau bisa juga “additional”.
+                Lihat suku kata “add” yang artinya tambah. Jadi dengan cara ini lo bisa menebak jawaban soal tersebut adalah C.</p>
+              <p><b>b. Analogi kata</b></p>
+              <p>Analogi kata adalah persesuaian antara dua benda atau hal yang berlainan. Dari dua atau lebih kata yang diberikan pada soal, kita diminta untuk mencari pasangan (bisa lebih) kata yang mempunyai hubungan yang sama dengan soal.</p>
+              <p>Tips mengerjakan soal seperti ini sih sering-sering berlatih soal biar kemampuan lo mengetahui hubungan kata bisa lebih terasah. Kalo lo udah ga ngerti salah satu kata dalam soal, misalnya dalam soal di atas lo ga ngerti apa itu "rona",
+                mending di skip aja karena terlalu riskan buat lo menebak-nebak analoginya, jika artinya saja lo ga ngerti.</p>
+              <p><b>c. Bacaan</b></p>
+              <p>Soal bacaan di USM STAN standar seperti soal bacaan di ujian lainnya, seperti di UN Bahasa Indonesia. Tapi waktu pengerjaannya yang sangat berbeda. Seperti yang gue bilang di atas, jumlah soal TPA 120 soal dan lo cuma dikasih waktu 100 menit.
+                Kalo dirata-rata, jatah per soal kurang 50 detik. Padahal waktu untuk baca dan memahami bacaan bisa membutuhkan waktu beberapa menit.</p>
+              <p>Dengan mepetnya waktu pengerjaan, gue dulu baca soalnya baru nyari jawaban di bacaan. Misal soalnya "ide pokok paragraf kedua" ya langsung aja baca paragraf keduanya, paragraf pertama abaikan aja. Dengan begitu lo bakal menghemat waktu dan
+                energi.</p>
+              <p>Lo bisa tonton video penjelasan dari Pak Kosim tentang bacaan dan teks berikut:</p>
+              <ol>
+                <li>
+                  <a href="#">Ide Pokok dan Kesimpulan Paragraf</a>
+                </li>
+                <li>
+                  <a href="#">Pertanyaan Sesuai Bacaan</a>
+                </li>
+                <li>
+                  <a href="#">Fakta dan Tanggapan dalam Teks</a>
+                </li>
+              </ol>
+              <p>Selain beberapa tips di atas, lo juga bisa baca Tips Mengerjakan Soal TPA Verbal SBMPTN dari Panje berikut</p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-bab-4" role="tabpanel" aria-labelledby="v-pills-bab-4-tab">
+              <p><b>Tips Mengerjakan Soal TPA Verbal SBMPTN</b></p>
+              <p>Setelah lo cukup memahami materi TPA verbal di atas, lo bisa mulai mengerjakan latihan soal TPA verbal USM STAN berikut. Disitu udah tersedia pembahasannya juga.</p>
+              <ol>
+                <li>
+                  <a href="#">Soal USM STAN 2016 - Bahasa Indonesia</a>
+                </li>
+                <li>
+                  <a href="#">Soal USM STAN 2015 - Bahasa Indonesia</a>
+                </li>
+                <li>
+                  <a href="#">Soal USM STAN 2015 - Verbal</a>
+                </li>
+                <li>
+                  <a href="#">Soal USM STAN 2014 - Bahasa Indonesia</a>
+                </li>
+                <li>
+                  <a href="#">Soal USM STAN 2014 - Verbal</a>
+                </li>
+              </ol>
+              <p><b>Panduan belajar kemampuan Aritmatika, Logika dan Pola Barisan</b></p>
+              <p><b>a. Aritmatika</b></p>
+              <p>Aritmatika mendapat porsi yang cukup banyak dalam TPA USM STAN. Dibanding TPA SBMPTN, tingkat kesulitannya sih menurut gue masih sulit di STAN. Tapi secara umum, materi nya udah pernah lo dapetin waktu SMP atau SMA.</p>
+              <p>Untuk belajarnya, lo WAJIB tonton semua video basic math yang dijelasin Sabda di sini:</p>
+              <ol>
+                <li><a href="#">Introduction to Basic Mathematical Skills</a></li>
+                <li><a href="#">Mathematical Method and Postulates</a></li>
+                <li><a href="#">Algebra and Arithmetics - Teori</a></li>
+                <li><a href="#">Mathematical Modelling and Ratio - Teori</a></li>
+                <li><a href="#">Graphics - Teori</a></li>
+              </ol>
+              <p>Sedikit tambahan tips dari gue dalam mengerjakan soal aritmatika khususnya USM STAN:</p>
+              <p><b>1) Kamu tidak perlu menghitung secara presisi</b></p>
+              <p>Beberapa soal USM STAN memang sengaja dibuat rumit, namun untuk mengetahui jawabannya, sebenernya lo ga mesti dapet jawaban secara presisi, karena kalo ngitung secara presisi, bakal butuh waktu yg lama. Sedangkan di ujian ini, lo mesti berpacu dengan waktu.</p>
+              <p>Contoh (soal USM STAN 2015)</p>
+              <img src="https://www.zenius.net/blog/wp-content/uploads/2017/03/Screen-Shot-2017-04-10-at-10.53.58-AM.png" class="img-fluid" style="width:400px">
+              <p>Jadi kira-kira jawabannya nilai p itu sama dengan 1,2 atau yang mendekati adalah pilihan jawaban E, coba cek pake kalkulator</p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-bab-5" role="tabpanel" aria-labelledby="v-pills-bab-5-tab">
+              <p><b>Tips Mengerjakan Soal Logika</b></p>
+              <p>Soal logika USM STAN terdiri dari soal logika proposisi dan logika analitik. Logika proposisi itu isinya ada hubungan antara premis p dan q, negasi, hubungan jika-maka, hubungan semua-ada, dan menarik kesimpulan dari premis yang udah disediain di soal. Banyak anak yang awalnya nyepelein soal ini. Padahal kalo lo ga paham teorinya, kemungkinan rawan terjebak.</p>
+              <p>Sedangkan logika analitik, lo dikasih suatu bacaan dan ada beberapa pertanyaan yang mengacu ke bacaan itu. Tapi sebelum lo menjawab, lo harus menganalisis dulu bacaannya.</p>
+              <p>Gue saranin banget lo tonton semua video dan baca penjelasan tentang logika dari Sabda dan Wilona berikut:</p>
+              <ol>
+                <li><a href="#">Tips Belajar TPA Logika Proposisi SBMPTN</a></li>
+                <li><a href="#">General Introduction to Thinking Machine</a></li>
+                <li><a href="#">Review Teori Logika</a></li>
+              </ol>              
+              <p>Sedikit tips untuk menjawab dengan menarik kesimpulan di soal tipe logika proposisi:</p>
+              <ul>
+                <li>Fokus ke premis yang sedang dibicarakan di soal</li>
+                <li>Jangan berasumsi atau mengambil kesimpulan di luar premis yang dibicarakan</li>
+                <li>Jangan mengaitkan premis dengan kehidupan nyata</li>
+              </ul>
+              <p><b>Pola Barisan</b></li>
+              <p>Soal pola barisan USM STAN secara umum dibagi menjadi 3:</p>
+              <ul>
+                <li>Pola angka</li>
+                <li>Pola huruf</li>
+                <li>Pola gambar</li>
+              </ul>
+              <p>Kalo analogi kata di atas, lo dituntut memahami hubungan dari kata, kalo pola barisan lo dituntut menebak pola angka, huruf atau gambar yang ada di soal. Polanya itu kalo buat angka, bisa pola selisih, pola loncat/ selang-seling, pola kuadrat, pola tingkat dua, pola bilangan prima, dll.</p>
+              <p>Sama seperti analogi kata, di pola barisan ini gue saranin lo banyak-banyak kerjain soal agar insting lo dalam mengetahui suatu pola bisa meningkat.</p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-quiz" role="tabpanel" aria-labelledby="v-pills-quiz">
+              <p><b>Pilihlah di antara A, B, C, D dan E yang mempunyai jawaban yang benar.</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <p class="mb-0">1. Stabilitas . . .</p>
+                    <form action="#">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="male">A. Keajegan
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">B. Kesiapan<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">C. Kecocokan<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">D. Kesenjangan<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">E. Kemantapan<br>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="mb-3">
+                    <p class="mb-0">3. Sektor . . .</p>
+                    <form action="#">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="male">A. Penggerak
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">B. Daerah<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">C. Penata<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">D. Usaha<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">E. Perdagangan<br>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="mb-3">
+                    <p class="mb-0">4. Cacat . . .</p>
+                    <form action="#">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="male">A. Kurang
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">B. Sempurna<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">C. Rusak<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">D. Standar<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">E. Baku<br>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="mb-3">
+                    <p class="mb-0">5. Krisis . . .</p>
+                    <form action="#">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="male">A. Labil
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">B. Darurat<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">C. Stabil<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">D. Bahaya<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">E. Aman<br>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <p class="mb-0">6. Kapabel . . .</p>
+                    <form action="#">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="male">A. Pandai
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">B. Lambat<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">C. Cekatan<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">D. Piawai<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">E. Bodoh<br>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="mb-3">
+                    <p class="mb-0">7. Semir – Sepatu = Deterjen -  . . .</p>
+                    <form action="#">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="male">A. Kaki
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">B. Rambut<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">C. Pakaian<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">D. Piawai<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">E. Cuci<br>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="mb-3">
+                    <p class="mb-0">8. Prestasi – Hadiah = Pengabdian -  . . .</p>
+                    <form action="#">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="male">A. Penghargaan
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">B. Pengorbanan<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">C. Penghormatan<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">D. Pemasukan<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">E. Pengakuan<br>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="mb-3">
+                    <p class="mb-0">9. Kapabel . . .</p>
+                    <form action="#">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="male">A. Pandai
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">B. Lambat<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">C. Cekatan<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">D. Piawai<br>
+                        </label>
+                      </div>
+                       <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="gender" value="female">E. Bodoh<br>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="../../assets/js/dashboard.js"></script>
+</body>
+
+</html>
